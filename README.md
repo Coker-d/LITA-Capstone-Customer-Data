@@ -17,7 +17,9 @@
  [Data Analysis](#data-analysis)
 
 [Excel Analysis](#excel-analysis)
+
 [SQL Analysis](sQL-analysis)
+
 [Power BI Analysis](power-bi-analysis) 
 
  ---
@@ -81,7 +83,9 @@ SELECT * From  table SalesData
 GROUP By Region
 ORDER BY Sales DESC
 ```
-
+```Excel
+=SUMIF(D2:D2233, K2: K2233)
+```
 ---
 ## Excel Analysis
 This is an analytical spread sheet used for budgetting especially storing and analyzing large
@@ -156,7 +160,7 @@ Group by SubscriptionType Order by TotalRevenue Desc
 A total sum of N33,776,735 is being Generated from Basic Subscription Type 
 This infers that Majority of the Customer enjoy the value they derived from the Package.
 
-#### Top3 Regions by subscription cancellation
+### Top3 Regions by subscription cancellation
 WE want to know the first to third regions that are performing well in terms of sales which regions 
 ```SQL
 Select Top 3 Region As Top3Region, COUNT(Canceled) as CanceledSubscription from [dbo].[Customer Capstone] Group by region
@@ -172,9 +176,10 @@ The order of Cancelattion is East South and North with number of cancelattion to
 Not all orders are paid for! we want to know why some are cancellled
 ```SQL
 Select Canceled,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Canceled
-```![Uploading active and Passive.JPG…]()
+```
+![Uploading active and Passive.JPG…]()
 #### Conclusion
-A larger percentage of all boookings are cancelled at the end of the day with 18,612 orders cancelled and 15,175 orders active
+A larger percentage of all boookings are cancelled at the end of the day with 18,612 orders cancelled and 15,175 orders active. Cancellation might be as a result of bad network in the Location which reverse transactions made making sbscription to be Cancelled
 
 
 ## Power BI Analysis 
