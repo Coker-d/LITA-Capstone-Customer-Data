@@ -126,6 +126,20 @@ All basic activities carrried out in the customer segmentation for subsription S
 
 #### Total number of active and canceled subscription
 
+#### Total Revenue by Product
+```
+Select product,Sum (quantity* Unitprice) as TotalSales From [dbo].[Sales Capstone] Group by Product
+```
+Select Region, count(*) as Numberoftransactions From [dbo].[Sales Capstone] Group by Region
+Select Top 1 Product as HighestSellingProduct, sum(quantity* Unitprice) as SalesValue From [dbo].[Sales Capstone] Group by Product order by SalesValue desc
+Select Product, Sum(quantity* Unitprice) as Total_Revenue From [dbo].[Sales Capstone] Group by Product
+Select Month(OrderDate) as Month, Sum(quantity* Unitprice) as MonthlySales From [dbo].[Sales Capstone]where Year(OrderDate) = Year(GETDATE())Group by Month(OrderDate) Order by Month;
+Select Top 5 Customer_Id as Top5Customers, sum(quantity* Unitprice) as Sales From [dbo].[Sales Capstone] Group by Customer_Id order by Sales desc
+Select Product, sum(quantity* Unitprice) as Nosales From [dbo].[Sales Capstone] Group by Product Having Sum(quantity* Unitprice) = 0
+
+
+
+
 
 ## Power BI Analysis 
 This analysis was carried out with the use of a key tool called Slicer for interactive activities
