@@ -111,9 +111,15 @@ Approximately 165 days
 All basic activities carrried out in the customer segmentation for subsription Service were kept on the Database using SQl  
 
 #### Total Numbers of customers from each region
-
+```SQL
+Select Region,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Region
+```
 #### Most Popular Customer subscription
-
+```SQL
+Select Top 1 SubscriptionType, COUNT(CustomerId) as MostPopularsubscription from [dbo].[Customer Capstone]
+Group by SubscriptionType
+Order by MostPopularsubscription Desc
+```
 #### Customers who cancelled their subscrription within 6 months
 
 #### Average subscription duration of all Customers
@@ -121,21 +127,31 @@ All basic activities carrried out in the customer segmentation for subsription S
 #### Customers with subscription longer than 12 Months
 
 #### Total Revenue by subsccription type
+```SQL
+Select SubscriptionType, Sum(Revenue) as TotalRevenue from [dbo].[Customer Capstone]
+ Group by SubscriptionType
+ Order by TotalRevenue Desc
 
 #### Top3 Regions by subscription cancellation
+```SQL
+Select Top 3 Region As Top3 Region, COUNT(Canceled) as CanceledSubscription from [dbo].[Customer Capstone]
+Group by region
+Order by CanceledSubscription Desc
+```
 
 #### Total number of active and canceled subscription
+```SQL
+Select Canceled,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone]
+ Group by Canceled
+```
 
 #### Total Revenue by Product
-```
-Select product,Sum (quantity* Unitprice) as TotalSales From [dbo].[Sales Capstone] Group by Product
-```
-Select Region, count(*) as Numberoftransactions From [dbo].[Sales Capstone] Group by Region
-Select Top 1 Product as HighestSellingProduct, sum(quantity* Unitprice) as SalesValue From [dbo].[Sales Capstone] Group by Product order by SalesValue desc
-Select Product, Sum(quantity* Unitprice) as Total_Revenue From [dbo].[Sales Capstone] Group by Product
-Select Month(OrderDate) as Month, Sum(quantity* Unitprice) as MonthlySales From [dbo].[Sales Capstone]where Year(OrderDate) = Year(GETDATE())Group by Month(OrderDate) Order by Month;
-Select Top 5 Customer_Id as Top5Customers, sum(quantity* Unitprice) as Sales From [dbo].[Sales Capstone] Group by Customer_Id order by Sales desc
-Select Product, sum(quantity* Unitprice) as Nosales From [dbo].[Sales Capstone] Group by Product Having Sum(quantity* Unitprice) = 0
+
+Select * from [dbo].[Customer Capstone]
+
+
+ 
+
 
 
 
