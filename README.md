@@ -82,6 +82,7 @@ GROUP By Region
 ORDER BY Sales DESC
 ```
 
+---
 ## Excel Analysis
 This is an analytical spread sheet used for budgetting especially storing and analyzing large
 amouunt of Data for financial analysis
@@ -107,16 +108,24 @@ Approximately 165 days
 
 
 ## SQL Analysis
+---
 
 All basic activities carrried out in the customer segmentation for subsription Service were kept on the Database using SQl.
 The following inferences were made using the table below:
 
+
+
 |Customer ID|CustomerName|Region|SubscriptionType|SuscriptionStart|SubscriptionEnd|Canceled|
+|-----------|------------| -----|----------------|----------------|---------------|--------| 
 |    204    |   Maria    | West |    Standard    |   30-4-2022    |   30-4-2023   |  FALSE | 
-# ### Total Numbers of customers from each region
+
+
+#### Total Numbers of customers from each region
+Here we want to know the total numbers of customers from Nort,East, South and west.
 ```SQL
 Select Region,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Region
 ```
+![Customers by Region](https://github.com/user-attachments/assets/e6281ffe-b18e-4aff-aacb-4dbbc0066d53)
 
 #### Most Popular Customer subscription
 ```SQL
@@ -148,22 +157,8 @@ Select Canceled,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone
 ```
 
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
 ## Power BI Analysis 
+---
 This analysis was carried out with the use of a key tool called Slicer for interactive activities
 
 #### Power BI Dashboard
