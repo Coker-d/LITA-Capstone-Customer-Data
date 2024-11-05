@@ -108,9 +108,12 @@ Approximately 165 days
 
 ## SQL Analysis
 
-All basic activities carrried out in the customer segmentation for subsription Service were kept on the Database using SQl  
+All basic activities carrried out in the customer segmentation for subsription Service were kept on the Database using SQl.
+The following inferences were made using the table below:
 
-#### Total Numbers of customers from each region
+|Customer ID|CustomerName|Region|SubscriptionType|SuscriptionStart|SubscriptionEnd|Canceled|
+|    204    |   Maria    | West |    Standard    |   30-4-2022    |   30-4-2023   |  FALSE | 
+# ### Total Numbers of customers from each region
 ```SQL
 Select Region,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Region
 ```
