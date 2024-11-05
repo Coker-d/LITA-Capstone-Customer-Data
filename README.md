@@ -87,7 +87,11 @@ This is an analytical spread sheet used for budgetting especially storing and an
 amouunt of Data for financial analysis
 ![Customer Data Excel](https://github.com/user-attachments/assets/fce124a6-2f53-4a63-9e0e-7b181663b4c2)
 
-#### Analysis of customer Data using Pivot Table to find subscription patterns 
+#### Analysis of Customer Data using Pivot Table to find subscription patterns 
+The various customer Data Are shown below
+![Uploading Pivot Customer Data.JPG…]()
+
+
 
 #### The Total Revenue
 This is the total amount generated from different subscriptiion type which stood as  N 67,540,175 
