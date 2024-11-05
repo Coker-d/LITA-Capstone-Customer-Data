@@ -153,16 +153,19 @@ Group by SubscriptionType Order by TotalRevenue Desc
 ```
 ![Revenue by Sub type](https://github.com/user-attachments/assets/122103bd-ac8d-4631-ba2f-00d3f50379a9)
 #### Conclusion
-A total sum of N33,776,735 is being Generated from Baasic Subscription Type 
+A total sum of N33,776,735 is being Generated from Basic Subscription Type 
 This infers that Majority of the Customer enjoy the value they derived from the Package.
 
 #### Top3 Regions by subscription cancellation
+WE want to know the first to third regions that are performing well in terms of sales which regions 
 ```SQL
 Select Top 3 Region As Top3Region, COUNT(Canceled) as CanceledSubscription from [dbo].[Customer Capstone] Group by region
 Order by CanceledSubscription Desc
 ```
+![Top3 by Cancelation](https://github.com/user-attachments/assets/f811759c-6ce4-4ba8-bbff-127db02b849e)
 
-#### Total number of active and canceled subscription
+####Conclusion
+### Total number of active and canceled subscription
 ```SQL
 Select Canceled,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Canceled
 ```
