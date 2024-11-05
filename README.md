@@ -16,7 +16,12 @@
 
  [Data Analysis](#data-analysis)
 
+[Excel Analysis](#excel-analysis)
+[SQL Analysis](sQL-analysis)
+[Power BI Analysis](power-bi-analysis) 
+
  ---
+ 
 
 
 ### Project Overview
@@ -58,10 +63,15 @@ To start with the Data cleaning, the following were carried out
 ### Exploratory Data Analysis
 ---
 this aspect involves digging deep into our data to answer questiions around our data such as
-  1.  Finding highest selling product
-  2. products with no sales in last quarter
-  3. Percentage total sales in each region
-  4. Monthly Sales Totals per annum
+ 
+  1. Total Numbers of customers from each region
+  2. Most Popular Customer subscription
+  3. Customers who cancelled their subscrription within 6 months
+  4. Average subscription duration of all Customers
+  5. Customers with subscription longer than 12 Months
+  6. Total Revenue by subsccription type
+  7. Top3 Regions by subscription cancellation
+  8. Total number of active and canceled subscription
 
 ### Data Analysis
 ---
@@ -70,3 +80,58 @@ The basic lines of codes, querries and DAX expression used during this analysis
 SELECT * From  table SalesData
 GROUP By Region
 ORDER BY Sales DESC
+```
+
+## Excel Analysis
+This is an analytical spread sheet used for budgetting especially storing and analyzing large
+amouunt of Data for financial analysis
+![Customer Data Excel](https://github.com/user-attachments/assets/fce124a6-2f53-4a63-9e0e-7b181663b4c2)
+
+#### Analysis of customer Data using Pivot Table to find subscription patterns 
+
+#### The Total Revenue
+This is the total amount generated from different subscriptiion type which stood as  N 67,540,175 
+
+#### Calculation of average subscription duratipon
+This is the average number of days taken for customer to subscribe which is 164.5876667 
+Approximately 165 days
+
+
+#### other analysis created 
+
+
+## SQL Analysis
+
+All basic activities carrried out in the customer segmentation for subsription Service were kept on the Database using SQl  
+
+#### Total Numbers of customers from each region
+
+#### Most Popular Customer subscription
+
+#### Customers who cancelled their subscrription within 6 months
+
+#### Average subscription duration of all Customers
+
+#### Customers with subscription longer than 12 Months
+
+#### Total Revenue by subsccription type
+
+#### Top3 Regions by subscription cancellation
+
+#### Total number of active and canceled subscription
+
+
+## Power BI Analysis 
+This analysis was carried out with the use of a key tool called Slicer for interactive activities
+
+#### Power BI Dashboard
+
+#### Key Customer Segment
+
+#### Cancelation
+
+#### Susription Trend
+
+
+
+
