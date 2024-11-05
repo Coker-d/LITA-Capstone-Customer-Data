@@ -164,11 +164,17 @@ Order by CanceledSubscription Desc
 ```
 ![Top3 by Cancelation](https://github.com/user-attachments/assets/f811759c-6ce4-4ba8-bbff-127db02b849e)
 
-####Conclusion
+#### Conclusion
+The order of Cancelattion is East South and North with number of cancelattion to be 8,488 , 8,466 and 8,433 respectively
+
+
 ### Total number of active and canceled subscription
+Not all orders are paid for! we want to know why some are cancellled
 ```SQL
 Select Canceled,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Canceled
-```
+```![Uploading active and Passive.JPG…]()
+#### Conclusion
+A larger percentage of all boookings are cancelled at the end of the day with 18,612 orders cancelled and 15,175 orders active
 
 
 ## Power BI Analysis 
