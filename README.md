@@ -120,26 +120,31 @@ The following inferences were made using the table below:
 |    204    |   Maria    | West |    Standard    |   30-4-2022    |   30-4-2023   |  FALSE | 
 
 
-#### Total Numbers of customers from each region
+### Total Numbers of customers from each region
 Here we want to know the total numbers of customers from Nort,East, South and west.
 ```SQL
 Select Region,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Region
 ```
 ![Customers by Region](https://github.com/user-attachments/assets/e6281ffe-b18e-4aff-aacb-4dbbc0066d53)
+#### Conclusion
+There are 8488 Customers from the East. Which may be attributable to the Lifestyle of the people leaving in the geographical Location 
 
-#### Most Popular Customer subscription
+### Most Popular Customer subscription
+The package which majority of the customers Subscribe to is the Basic package with 1,692 Subscribers.
+
 ```SQL
 Select SubscriptionType, COUNT(CustomerId) as MostPopularsubscription from [dbo].[Customer Capstone] Group by SubscriptionType 
 Order by MostPopularsubscription Desc
 ```
+![MostPopular Sub](https://github.com/user-attachments/assets/31593dcc-d756-4aa9-bba2-c39cc3bad689)
 
-#### Customers who cancelled their subscrription within 6 months
+### Customers who cancelled their subscrription within 6 months
 
-#### Average subscription duration of all Customers
+### Average subscription duration of all Customers
 
-#### Customers with subscription longer than 12 Months
+### Customers with subscription longer than 12 Months
 
-#### Total Revenue by subsccription type
+### Total Revenue by subsccription type
 ```SQL
 Select SubscriptionType, Sum(Revenue) as TotalRevenue from [dbo].[Customer Capstone]
 Group by SubscriptionType Order by TotalRevenue Desc
