@@ -131,12 +131,13 @@ There are 8488 Customers from the East. Which may be attributable to the Lifesty
 
 ### Most Popular Customer subscription
 The package which majority of the customers Subscribe to is the Basic package with 1,692 Subscribers.
-
 ```SQL
 Select SubscriptionType, COUNT(CustomerId) as MostPopularsubscription from [dbo].[Customer Capstone] Group by SubscriptionType 
 Order by MostPopularsubscription Desc
 ```
 ![MostPopular Sub](https://github.com/user-attachments/assets/31593dcc-d756-4aa9-bba2-c39cc3bad689)
+#### Conclusion
+The Basic sbscription has most of the subscribers because its the cheapest among the packages.
 
 ### Customers who cancelled their subscrription within 6 months
 
@@ -145,10 +146,15 @@ Order by MostPopularsubscription Desc
 ### Customers with subscription longer than 12 Months
 
 ### Total Revenue by subsccription type
+we want to know how much each Package is Generating inthe period under review
 ```SQL
 Select SubscriptionType, Sum(Revenue) as TotalRevenue from [dbo].[Customer Capstone]
 Group by SubscriptionType Order by TotalRevenue Desc
 ```
+![Revenue by Sub type](https://github.com/user-attachments/assets/122103bd-ac8d-4631-ba2f-00d3f50379a9)
+#### Conclusion
+A total sum of N33,776,735 is being Generated from Baasic Subscription Type 
+This infers that Majority of the Customer enjoy the value they derived from the Package.
 
 #### Top3 Regions by subscription cancellation
 ```SQL
