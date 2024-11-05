@@ -95,6 +95,7 @@ This is the total amount generated from different subscriptiion type which stood
 #### Calculation of average subscription duratipon
 This is the average number of days taken for customer to subscribe which is 164.5876667 
 Approximately 165 days
+![Average Sub Period](https://github.com/user-attachments/assets/c01d0359-a93a-4c36-8cb6-21f3fadc82e6)
 
 
 #### other analysis created 
