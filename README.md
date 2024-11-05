@@ -114,12 +114,13 @@ All basic activities carrried out in the customer segmentation for subsription S
 ```SQL
 Select Region,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Region
 ```
+
 #### Most Popular Customer subscription
 ```SQL
-Select Top 1 SubscriptionType, COUNT(CustomerId) as MostPopularsubscription from [dbo].[Customer Capstone]
-Group by SubscriptionType
+Select SubscriptionType, COUNT(CustomerId) as MostPopularsubscription from [dbo].[Customer Capstone] Group by SubscriptionType 
 Order by MostPopularsubscription Desc
 ```
+
 #### Customers who cancelled their subscrription within 6 months
 
 #### Average subscription duration of all Customers
@@ -129,25 +130,27 @@ Order by MostPopularsubscription Desc
 #### Total Revenue by subsccription type
 ```SQL
 Select SubscriptionType, Sum(Revenue) as TotalRevenue from [dbo].[Customer Capstone]
- Group by SubscriptionType
- Order by TotalRevenue Desc
+Group by SubscriptionType Order by TotalRevenue Desc
+```
 
 #### Top3 Regions by subscription cancellation
 ```SQL
-Select Top 3 Region As Top3 Region, COUNT(Canceled) as CanceledSubscription from [dbo].[Customer Capstone]
-Group by region
+Select Top 3 Region As Top3Region, COUNT(Canceled) as CanceledSubscription from [dbo].[Customer Capstone] Group by region
 Order by CanceledSubscription Desc
 ```
 
 #### Total number of active and canceled subscription
 ```SQL
-Select Canceled,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone]
- Group by Canceled
+Select Canceled,Count(CustomerId) as NoOfCustomers from [dbo].[Customer Capstone] Group by Canceled
 ```
 
-#### Total Revenue by Product
 
-Select * from [dbo].[Customer Capstone]
+
+
+
+
+
+
 
 
  
