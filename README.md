@@ -113,12 +113,10 @@ Approximately 165 days
 
 ## SQL Analysis
 ---
+Due to large volume of thhe file, the Data used for this analysis was converteed to csv delimiter / Flat File to accomodate the data set (Previously in Excel Format i.e .Xlsl)
 
 All basic activities carrried out in the customer segmentation for subsription Service were kept on the Database using SQl.
-The following inferences were made using the table below:
-
-
-
+The following inferences were made using the Schema below:
 |Customer ID|CustomerName|Region|SubscriptionType|SuscriptionStart|SubscriptionEnd|Canceled|
 |-----------|------------| -----|----------------|----------------|---------------|--------| 
 |    204    |   Maria    | West |    Standard    |   30-4-2022    |   30-4-2023   |  FALSE | 
@@ -187,6 +185,8 @@ A larger percentage of all boookings are cancelled at the end of the day with 18
 This analysis was carried out with the use of a key tool called Slicer for interactive activities
 
 #### Power BI Dashboard
+Below is the Dashboard of the of the Customer Data
+
 
 #### Key Customer Segment
 
