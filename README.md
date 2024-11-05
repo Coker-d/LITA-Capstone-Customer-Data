@@ -103,6 +103,7 @@ Approximately 165 days
 
 
 #### other analysis created 
+![Uploading Chart Customer Data.JPG…]()
 
 
 ## SQL Analysis
