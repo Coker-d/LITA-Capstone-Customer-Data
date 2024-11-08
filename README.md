@@ -91,12 +91,12 @@ ORDER BY Sales DESC
 
 This is an analytical spread sheet used for budgetting especially storing and analyzing large
 amouunt of Data for financial analysis
+![Customer Data Excel](https://github.com/user-attachments/assets/bb9bc028-8284-4cd7-b26e-fb0db3722ff4)
 
 
-![Chart![Pivot Excel CD](https://github.com/user-attachments/assets/9f190433-1daa-42b5-ac2b-0b5db9872d53)
- Customer Data](https://github.com/user-attachments/assets/1dc81322-df9a-42f6-997a-e9e7bf862b36)
+![Pivot Excel CD](https://github.com/user-attachments/assets/06a4e549-51da-4179-9729-374a4f8c233f)
 
-
+![Chart Customer Data](https://github.com/user-attachments/assets/53208b5e-5b0b-4cbc-b3d3-999597cb7fac)
 
 #### Analysis of Customer Data using Pivot Table to find subscription patterns 
 The various customer Data Are shown below
@@ -192,7 +192,8 @@ This analysis was carried out with the use of a key tool called Slicer for inter
 
 #### Power BI Dashboard
 Below is the Dashboard of the of the Customer Data
-![Uploading Customer Data Power BI.JPG…]()
+
+![Customer Data Power BI](https://github.com/user-attachments/assets/187c9504-8287-49e8-bc4b-9061db4b1dd8)
 
 
 #### Key Customer Segment
