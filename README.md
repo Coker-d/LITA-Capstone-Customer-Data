@@ -186,6 +186,7 @@ This analysis was carried out with the use of a key tool called Slicer for inter
 
 #### Power BI Dashboard
 Below is the Dashboard of the of the Customer Data
+![Uploading Customer Data Power BI.JPG…]()
 
 
 #### Key Customer Segment
