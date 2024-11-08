@@ -88,9 +88,15 @@ ORDER BY Sales DESC
 ```
 ---
 ## Excel Analysis
+
 This is an analytical spread sheet used for budgetting especially storing and analyzing large
 amouunt of Data for financial analysis
-![Customer Data Excel](https://github.com/user-attachments/assets/fce124a6-2f53-4a63-9e0e-7b181663b4c2)
+![Customer Data Excel](https://github.com/user-attachments/assets/fce124a6-2f53-4a63-9e0e-7b1816![Pivot Excel CD](https://github.com/user-attachments/assets/a41ef71c-3814-48ed-82b4-1f2421e852c8)
+63b4c2)
+
+![Chart Customer Data](https://github.com/user-attachments/assets/1dc81322-df9a-42f6-997a-e9e7bf862b36)
+
+
 
 #### Analysis of Customer Data using Pivot Table to find subscription patterns 
 The various customer Data Are shown below
